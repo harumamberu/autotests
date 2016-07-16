@@ -1,6 +1,5 @@
-/**
- * Created by Мишка on 11.07.16.
- */
+package com.harumamberu.utils.castings;
+
 public class WideningCasting {
    byte byte1 = 127;
    short short1 = 0;

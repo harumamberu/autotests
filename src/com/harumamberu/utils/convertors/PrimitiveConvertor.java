@@ -1,9 +1,9 @@
 package com.harumamberu.utils.convertors;
 
 public class PrimitiveConvertor {
-    float floatPC = 69f;
-    int intPC = 69;
-    char charPC = 0;
+    float floatPC = 69.854f;
+    int intPC = 1;
+    char charPC = 1;
 
     public void floatToChar() {
         charPC = (char) floatPC;

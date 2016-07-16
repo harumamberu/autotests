@@ -1,9 +1,11 @@
-package com.harumamberu.utils.convertors;
+package com.harumamberu.utils.runners;
+
+import com.harumamberu.utils.convertors.PrimitiveConvertor;
 
 /**
  * Created by Мишка on 12.07.16.
  */
-public class Executor {
+public class PConvertorRunner {
     public static void main(String args[]) {
         PrimitiveConvertor pc_object1 = new PrimitiveConvertor();
         pc_object1.floatToChar();

@@ -1,6 +1,7 @@
 package com.harumamberu.utils.calculators;
 
 import java.util.Scanner;
+
 public class CircleArea {
     public static final double PI = 3.14d;
        public static void calculate(){

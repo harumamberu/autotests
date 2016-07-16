@@ -1,6 +1,6 @@
 package com.harumamberu.utils.runners;
 
-import Lections.WideningCasting;
+import com.harumamberu.utils.castings.WideningCasting;
 
 /**
  * Created by Мишка on 11.07.16.

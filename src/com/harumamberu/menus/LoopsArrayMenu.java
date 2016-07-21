@@ -5,6 +5,17 @@ package com.harumamberu.menus;
  */
 public class LoopsArrayMenu {
     public void Arrays() {
-        int[][] Array = new int[10][1];
+        int[] EvenArray = new int[10];
+        int k = 2;
+        for ( int i = 0; ( i > -1 ) && ( i < 10); i++){
+            EvenArray[i] = k;
+            k+=2;
+        }
+        for ( int i : EvenArray ){
+            System.out.print(" " + i);
+        }
+        for ( int i : EvenArray ){
+            System.out.print("\n" + i);
+        }
     }
 }

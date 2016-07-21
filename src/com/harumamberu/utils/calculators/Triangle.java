@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Triangle {
 
-    public void calculateTriangle(){
+    public static void calculateTriangle(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the length of hypotenuse C");
         double c = scanner.nextDouble();

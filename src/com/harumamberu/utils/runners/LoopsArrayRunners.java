@@ -8,6 +8,6 @@ import com.harumamberu.menus.LoopsArrayMenu;
 public class LoopsArrayRunners {
     public static void main(String[] args) {
         LoopsArrayMenu loopsArray1 = new LoopsArrayMenu();
-        loopsArray1.Arrays();
+        loopsArray1.loopArrayMenu();
     }
 }

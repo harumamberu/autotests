@@ -10,7 +10,7 @@ public class WideningCasting {
 
 //correct conversion 64f<=32f<=64<=32<=16<=8
 
-    public void test1(){
+    public void widening(){
         double1 = float1 = long1 = int1 = short1 = byte1;
         System.out.println(double1);
     }

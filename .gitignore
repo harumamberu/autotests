@@ -35,6 +35,8 @@
 
 # IntelliJ
 out/
+src/com/harumamberu/examples/
+
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

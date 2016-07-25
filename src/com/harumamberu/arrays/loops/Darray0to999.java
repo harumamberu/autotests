@@ -19,19 +19,19 @@ public class Darray0to999 {
         }
 
 ////////////////////////////////////////////////////
-
-        do { flag = 0;
-            for ( int i = 0; i < 14; i++){
-                if ( sort[i] > sort[i+1]){
-                    int b;
-                    b = sort[i];
-                    sort[i] = sort[i+1];
-                    sort[i+1] = b;
-                    flag++;
+        int i = 0;
+        int min = sort[i];
+        int max = sort[i];
+            for ( i = 0; i < sort.length; i++){
+                if ( sort[i] > max){
+                    max = sort[i];
+                }
+                if ( sort[i] < min){
+                    min = sort[i];
                 }
             }
-        }while (flag != 0);
-        System.out.println("\nThe lowest value in array is " + arr0to999[0] + ".\nThe biggest value in array is " + arr0to999[14] + ".");
+
+        System.out.println("\nThe lowest value in array is " + min + ".\nThe biggest value in array is " + max + ".");
 ////////////////////////////////////////////////////
     }
 }

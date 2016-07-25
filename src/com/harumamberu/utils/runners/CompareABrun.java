@@ -1,4 +1,6 @@
-package com.harumamberu.utils.loop;
+package com.harumamberu.utils.runners;
+
+import com.harumamberu.utils.loop.CompareAB;
 
 /**
  * Created by Мишка on 18.07.16.

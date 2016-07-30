@@ -13,7 +13,7 @@ public class LoopsArrayMenu {
         Scanner sc = new Scanner(System.in);
         int stop = 0;
         do {
-            System.out.println("_______________________");
+            System.out.println("\n_______________________");
             System.out.println("Enter the symbol to choose equal array:\na b c d e f g\nEnter 'S' to stop.");
             String i = sc.next();
             switch (i){
@@ -32,6 +32,7 @@ public class LoopsArrayMenu {
             case "f":
                 FarraySum farr = new FarraySum();
                 farr.arrSum();
+                break;
             case "S": ++stop;
                 break;
                 default: System.out.println("You have made incorrect choice");

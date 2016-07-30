@@ -11,5 +11,6 @@ public class PConvertorRunner {
         pc_object1.floatToChar();
         pc_object1.intToChar();
         pc_object1.charToInt();
+        pc_object1.primitiveToString();
     }
 }

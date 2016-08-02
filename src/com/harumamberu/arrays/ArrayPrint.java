@@ -16,16 +16,28 @@ public class ArrayPrint {
         int maxV = sc.nextInt();//upper bound value
 
         int[] arrRandomV = new int[l];
+        int[] arrIn = arrRandomV;
         for(int i = 0; i < l-1; i++){
             arrRandomV[i] = (int) (Math.random()*minV - maxV);
         }
-        return arrRandomV;
+        
+        return arrIn;
     }
 
-    public int[] arrayPrintIn(int[] arrRandomValue){
+    public int[] arrayPrintIn(int[] arrIn){
+        System.out.println("Incoming array:");
+        for (int i : arrIn){
+            System.out.println(arrIn[i]);
+        }
 
     }
 
+    public int[] arrayPrintOut(int[] arrOut){
+        System.out.println("Sorted array:");
+        for (int i : arrOut){
+            System.out.println(arrOut[i]);
+        }
 
+    }
 
 }

@@ -1,4 +1,4 @@
-package com.harumamberu.arrays.loops;
+package com.harumamberu.arrays;
 
 /**
  * Created by Михаїл on 25.07.2016.

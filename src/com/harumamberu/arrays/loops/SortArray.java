@@ -9,24 +9,31 @@ public class SortArray {
     public static void main(String[] args) {
 
         int flag = 0;
-        int[] sortA = new int[10];
-        int k = 10;
-        for (int i = 0; i<10; i++){
-            sortA[i] = k;
-            k--;
-        }
-        do {flag = 0;
-            int b = 0;
-            for (int i=0; i<9; i++){
-                if (sortA[i] > sortA[i+1]){
-                    b = sortA[i+1];
-                    flag++;
-                    sortA[i+1]=sortA[i];
-                    sortA[i]=b;
+        int[] arr = new int[5];
+
+            for (int j = 0; j < 5; j++){
+                arr[j] = (int) (Math.random()*995) + 5;
+                System.out.printf("%3d ", arr[j]);
+            }
+            System.out.println();
+
+        for (int i = 0; i < arr.length; i++) {
+            int num = arr[i];
+            for (int j = i - 1; j >= 0; j--) {
+                int leftNumber = arr[j];
+                if (num < leftNumber) {
+                    arr[j + 1] = leftNumber;
+                    arr[j] = num;
                 }
             }
-        } while (flag != 0);
-        for (int i : sortA){
-        System.out.print(" " + i);}
+        }
+
+
+
+
+        for (int i : arr) {
+            System.out.printf("%3d ", i);
+        }
+
     }
 }

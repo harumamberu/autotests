@@ -19,6 +19,7 @@ public class ArrayPrint {
         for(int i = 0; i < l-1; i++){
             arrRandomV[i] = (int) (Math.random()*minV - maxV);
         }
+        return arrRandomV;
     }
 
     public int[] arrayPrintIn(int[] arrRandomValue){

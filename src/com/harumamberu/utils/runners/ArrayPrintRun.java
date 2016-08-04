@@ -17,7 +17,7 @@ public class ArrayPrintRun {
 
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("\nEnter number to choose act:\n1 sort from min to max\n2 sort from max to min\n3 find min value");
+        System.out.println("\nEnter number to choose act:\n1 sort from min to max\n2 sort from max to min\n3 find max value");
         String i = sc.next();
         switch(i){
             case "1":

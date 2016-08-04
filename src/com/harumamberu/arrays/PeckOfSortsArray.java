@@ -64,4 +64,26 @@ public class PeckOfSortsArray {
 
 /////////////////////////////////////////
 
+    public int maxValue (int[][] arrIn){
+        int[][] arrOut = arrIn;
+        int j =0;
+        int i =0;
+        int maxV = arrOut[j][i];
+
+        for(j = 0; j<arrOut.length; j++){
+            for(i = 0; i<arrOut[j].length; i++){
+                if ( i == (arrOut[j].length -1) && j < (arrOut.length - 1)){
+                    if (arrOut[j][i+1] > arrOut[j+1][0]){
+                       maxV=arrOut[j][i];
+                    }
+
+                }
+
+                if(arrOut[j][i]>maxV){
+                    maxV=arrOut[j][i];
+                }
+            }
+        }
+     return maxV;
+    }
 }

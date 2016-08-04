@@ -16,8 +16,6 @@ public class ArrayPrintRun {
         objAP.arrayPrintIn(a1);
 
 
-
-
         Scanner sc = new Scanner(System.in);
         System.out.println("\nEnter number to choose act:\n1 sort from min to max\n2 sort from max to min\n3 find min value");
         String i = sc.next();
@@ -31,13 +29,12 @@ public class ArrayPrintRun {
                 objAP.arrayPrintOut(max2min);
                 break;
             case "3":
+                int maxV = objPOSA.maxValue(a1);
+                System.out.println("\n" + maxV);
                 break;
             default:
                 System.out.println("Wrong input");
 
         }
-
-
-
     }
 }

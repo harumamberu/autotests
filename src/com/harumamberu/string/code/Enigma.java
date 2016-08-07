@@ -16,6 +16,7 @@ public class Enigma {
             for (int i=0; i<code.length(); i++){
                 if (builder.charAt(j)==original.charAt(i)){
                     builder.setCharAt(j, code.charAt(i));
+                    break;
                 }
             }
         }
@@ -31,6 +32,7 @@ public class Enigma {
             for (int i=0; i<code.length(); i++){
                 if (builder.charAt(j)==code.charAt(i)){
                     builder.setCharAt(j, original.charAt(i));
+                    break;
                 }
             }
         }

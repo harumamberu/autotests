@@ -7,5 +7,6 @@ public class CodeMenu {
     public static void main(String[] args) {
         Enigma code = new Enigma();
         code.code();
+        code.decode();
     }
 }

@@ -101,20 +101,24 @@ public class SortsArray {
         return minV;
     }
 ///////////////////////////////////////////////////////////
-    public static int[][] selectionSortMin2Max (int[][] arrIn){
+    public static int[][] selectionSortMax2Min(int[][] arrIn){
         int[][] arrOut = arrIn;
-        int maxI, maxJ, sort;
+        int maxI, maxJ, sort, jump;
         boolean flag;
         do {flag = true;
             for (int i = 0; i < arrOut.length; i++) {
                 for (int j = 0; j < arrOut[i].length; j++) {
                     maxI = i;
                     maxJ = j;
+                    jump = j;
                     for (int m = i; m < arrOut.length; m++) {
-                        for (int n = j; n < arrOut[0].length; n++) {
-                            if (arrOut[m][n] > arrOut[maxI][maxJ]) {
+                        for (int n = jump; n < arrOut[0].length; n++) { //find smallest value
+                            if (arrOut[m][n] > arrOut[maxI][maxJ]) {    //find smallest value
                                 maxI = m;
                                 maxJ = n;
+                            }
+                            if (n == arrOut[0].length - 1){ //jump to the start of the next subarray arrOut[i][0]
+                                jump = 0;
                             }
                         }
                     }

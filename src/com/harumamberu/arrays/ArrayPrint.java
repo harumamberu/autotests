@@ -34,7 +34,7 @@ public class ArrayPrint {
                 break;
             case "3": System.out.println(maxValue(arrRandom));
                 break;
-            case "4": arrayPrintOut(selectionSortMin2Max(arrRandom));
+            case "4": arrayPrintOut(selectionSortMax2Min(arrRandom));
                 break;
             default: System.out.println("Wrong input.");
         }

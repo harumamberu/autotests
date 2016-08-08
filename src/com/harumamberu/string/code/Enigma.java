@@ -6,45 +6,28 @@ import java.util.Scanner;
  * Created by Мишка on 04.08.16.
  */
 public class Enigma {
-    String original = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-    String code = ("NOPQRSTUVWXYZABCDEFGHIJKLM");
-    public String code(){
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+    static String originalT = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+    static String encodeT = ("NOPQRSTUVWXYZABCDEFGHIJKLM");
+    public static void code(String toEncode){
+        Enigma.cipler(toEncode, originalT, encodeT);
+    }
+
+    public static void decode(String toDecode){
+        Enigma.cipler(toDecode, encodeT, originalT);
+    }
+
+    public static String cipler(String input, String stringFrom, String stringTo){
         StringBuilder builder = new StringBuilder(input);
         for (int j =0; j<builder.length(); j++){
-            for (int i=0; i<code.length(); i++){
-                if (builder.charAt(j)==original.charAt(i)){
-                    builder.setCharAt(j, code.charAt(i));
+            for (int i = 0; i< stringTo.length(); i++){
+                if (builder.charAt(j) == stringFrom.charAt(i)){
+                    builder.setCharAt(j, stringTo.charAt(i));
                     break;
                 }
             }
         }
         System.out.println(builder.toString());
-        return input;
+        String output = builder.toString();
+        return output;
     }
-
-    public String decode(){
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        StringBuilder builder = new StringBuilder(input);
-        for (int j =0; j<builder.length(); j++){
-            for (int i=0; i<code.length(); i++){
-                if (builder.charAt(j)==code.charAt(i)){
-                    builder.setCharAt(j, original.charAt(i));
-                    break;
-                }
-            }
-        }
-        System.out.println(builder.toString());
-        return input;
-    }
-
-//    public static String decode(){
-
-//    }
-
-  //  public static String cipler (String input, String orignal, String decode){
-
-    //}
 }

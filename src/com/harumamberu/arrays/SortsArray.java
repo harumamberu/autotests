@@ -134,4 +134,23 @@ public class SortsArray {
 
         return arrOut;
     }
+////////////////////////////////////////////////////////
+public static int[] selectionSortMax2MinArr(int[] arrIn){
+    int[] arrOut = arrIn;
+    int maxI, maxJ, sort, jump;
+    boolean flag;
+        for (int i = 0; i < arrOut.length; i++) {
+                maxI = i;
+                for (int m = i; m < arrOut.length; m++) {
+                        if (arrOut[m] > arrOut[maxI]) {    //find smallest value
+                            maxI = m;
+                        }
+                }
+                sort = arrOut[i];
+                arrOut[i] = arrOut[maxI];
+                arrOut[maxI] = sort;
+                flag = false;
+        }
+    return arrOut;
+}
 }

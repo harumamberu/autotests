@@ -1,5 +1,7 @@
 package com.harumamberu.files;
 
+import com.harumamberu.arrays.SortsArray;
+
 import java.io.*;
 
 /**
@@ -13,38 +15,61 @@ public class bufferedReader {
             e.printStackTrace();
         }
     }
-    public static BufferedReader readFile() throws IOException {
+    public static String[] readFile() throws IOException {
         BufferedReader readedF = new BufferedReader( new FileReader("D:\\input.txt"));
-      /*String line[];
-        for ( int i = 0; line[i] != null; i++) {
-            line[i] = readedF.readLine();
+        int linesN = 0;
+        String line4length;
+        while((line4length = readedF.readLine()) != null) {
+            linesN++;
         }
-        readedF.close();*/
-        return readedF;
+
+        String fileOfLines[] = new String[linesN];
+        for ( int i = 0; readedF.readLine() != null; i++) {
+            fileOfLines[i] = readedF.readLine();
+        }
+
+        readedF.close();
+        return fileOfLines;
     }
 
     public static BufferedWriter writeToFile() throws IOException {
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("D:\\output.txt")));
+
 //        BufferedReader readedF = new BufferedReader( new FileReader(pathFile));
 //        String line;
         return writer;
     }
 
-    public static void sortFile(BufferedReader reader, BufferedWriter writer) throws IOException {
-        String line;
+    public static void sortFile(String[] file, BufferedWriter writer) throws IOException {
         int sortP;
-        String[] sortLine;
-        while((line = reader.readLine()) != null) {
-            sortLine = line.split(",");
-            for (int i = 0; i < sortLine.length - 1; i++) {
-                if (Integer.valueOf(sortLine[i]) > Integer.valueOf(sortLine[i + 1])) {
-                    sortP = Integer.valueOf(sortLine[i]);
-                    sortLine[i] = sortLine[i+1];
-                    sortLine[i + 1] = String.valueOf(sortP);
-                }
+        String[][] sortLine = new String[file.length][];
+        int[][] sortLineInt = new int[file.length][];
+        for( int q = 0; q < file.length; q++) {
+            sortLine[q] = file[q].split(",");
+        }
+
+        for( int q = 0; q < file.length; q++){
+            for( int i = 0; i < file[q].length(); i++){
+                sortLineInt[q][i] = Integer.valueOf(sortLine[q][i]);
             }
         }
-        for (String s : sortLine) {
+
+        for( int q = 0; q < file.length - 1; q++) {
+/*            for (int i = 0; i < sortLine.length - 1; i++) {
+                if (Integer.valueOf(sortLine[q][i]) > Integer.valueOf(sortLine[q][i + 1])) {
+                    sortP = Integer.valueOf(sortLine[q][i]);
+                    sortLine[q][i] = sortLine[q][i+1];
+                    sortLine[q][i + 1] = String.valueOf(sortP);
+                }
+            }
+            */
+            int[] sorted = SortsArray.selectionSortMax2MinArr(sortLineInt[q]);
+            writer.append();
+            writer.newLine();
+        }
+
+
+        for (String[] s : sortLine) {
 
         }
 

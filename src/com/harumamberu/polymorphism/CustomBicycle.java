@@ -15,5 +15,11 @@ public class CustomBicycle extends Bicycle {
         this.speed = speed;
         System.out.println(this.speed);
     }
-    
+
+    public static void main(String[] args) {
+        Bicycle ref = new CustomBicycle();
+        ref.setGear(5);
+        ref.ride("Wshhhh");
+    }
+
 }

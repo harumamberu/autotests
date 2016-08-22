@@ -1,11 +1,14 @@
 package com.harumamberu.polymorphism;
 
-/**
- * Created by Михаїл on 22.08.2016.
- */
 public abstract class Bicycle {
-    public void ride(){
-        System.out.println("Wrooom!");
+    String sound;
+
+    public Bicycle(){
+        this.sound = "Wroom";
+    }
+
+    public void ride(String sound){
+        System.out.println(sound);
     }
 
     public abstract void setSpeed(int speed);

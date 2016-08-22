@@ -8,7 +8,8 @@ public class BicycleWithRing implements BicycleWithRingInterface{
         System.out.println("Di-ling!");
     }
 
-    BicycleWithRingInterface reference = new BicycleWithRing();
-    reference.ring();
-
+    public static void main(String[] args) {
+        BicycleWithRingInterface reference = new BicycleWithRing();
+        reference.ring();
+    }
 }

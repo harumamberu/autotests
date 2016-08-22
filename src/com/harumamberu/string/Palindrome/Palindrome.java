@@ -1,10 +1,8 @@
-package com.harumamberu;
+package com.harumamberu.string.Palindrome;
 
 import java.util.Scanner;
 
-/**
- * Created by Мишка on 25.07.16.
- */
+
 public class Palindrome {
     public static void main(String[] args) {
         int l;

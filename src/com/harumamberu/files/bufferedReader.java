@@ -64,7 +64,7 @@ public class bufferedReader {
             }
             */
             int[] sorted = SortsArray.selectionSortMax2MinArr(sortLineInt[q]);
-            writer.append();
+            writer.append("" + sorted[q]);
             writer.newLine();
         }
 

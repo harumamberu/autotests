@@ -1,8 +1,6 @@
 package com.harumamberu.arrays;
 
-/**
- * Created by Михаїл on 25.07.2016.
- */
+
 public class SortsArray {
 
     public static int[][] sortMinToMax (int[][] arrIn){

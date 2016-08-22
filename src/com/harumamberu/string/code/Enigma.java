@@ -2,9 +2,7 @@ package com.harumamberu.string.code;
 
 import java.util.Scanner;
 
-/**
- * Created by Мишка on 04.08.16.
- */
+
 public class Enigma {
     static String originalT = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
     static String encodeT = ("NOPQRSTUVWXYZABCDEFGHIJKLM");
@@ -27,7 +25,6 @@ public class Enigma {
             }
         }
         System.out.println(builder.toString());
-        String output = builder.toString();
-        return output;
+        return builder.toString();
     }
 }

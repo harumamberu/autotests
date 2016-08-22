@@ -1,5 +1,7 @@
 package com.harumamberu.arrays.loops;
 
+import com.harumamberu.arrays.ArrayPrint;
+
 import static com.harumamberu.arrays.ArrayPrint.*;
 
 /**
@@ -17,7 +19,7 @@ public class BoddArray1to99 {
             }
         }
 
-        arrayPrintIn(oddArray);
+        new ArrayPrint().arrayPrintIn(oddArray);
         System.out.println();
         int length = oddArray.length;
         for (int j = length - 1; j > -1; j--){

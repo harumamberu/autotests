@@ -1,29 +1,36 @@
 package com.harumamberu.polymorphism;
 
 
+import com.sun.istack.internal.Nullable;
+
 public class RandomArrayParametrizedCreator extends RandomArrayCreator {
 
-
-    public RandomArrayParametrizedCreator(int length, int minV, int maxV){
-        this.length = length;
-        this.minV = minV;
-        this.maxV = maxV;
+    public RandomArrayParametrizedCreator(int length){
+        super();
+        setLength(length);
     }
 
-    public RandomArrayParametrizedCreator(int length, int width, int minV, int maxV){
-        this.length = length;
-        this.width = width;
-        this.minV = minV;
-        this.maxV = maxV;
+    public RandomArrayParametrizedCreator(int length, int width){
+        super();
+        setLength(length);
+        setWidth(width);
     }
+
 
     @Override
-    public int[][] create(int length, int minV, int maxV){
-        return super.create(length, minV, maxV);
+    public int[] create(int length){
+        if(getWidth() != 0){
+            return null;
+        }
+        return super.create(getLength());
     }
 
+
     @Override
-    public int[][] create(int length, int width, int minV, int maxV){
-        return super.create(length, width, minV, maxV);
+    public int[][] create(int length, int width){
+        if(getWidth() == 0){
+            return null;
+        }
+        return super.create(getLength(), getWidth());
     }
 }

@@ -37,6 +37,14 @@ public class ArrayPrint {
             default: System.out.println("Wrong input.");
         }
     }
+    public int[] arrRandomValue(int l, int minV, int maxV){
+        int[] arrRandomV = new int[l];
+        int[] arrIn = arrRandomV;
+            for (int i = 0; i < l; i++) {
+                arrRandomV[i] = (int) ((Math.random() * (maxV + 1 - minV)) + minV);
+            }
+        return arrIn;
+    }
 
     public int[][] arrRandomValue(int l, int w, int minV, int maxV){
         int[][] arrRandomV = new int[w][l];
@@ -47,6 +55,14 @@ public class ArrayPrint {
             }
         }
         return arrIn;
+    }
+
+    public void arrayPrintIn(int[] arrIn){
+        System.out.println("Incoming array:");
+        for (int j = 0; j < arrIn.length;j++) {
+                System.out.printf("%4d ", arrIn[j]);
+        }
+        System.out.println();
     }
 
     public void arrayPrintIn(int[][] arrIn){

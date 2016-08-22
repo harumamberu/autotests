@@ -7,7 +7,7 @@ public class CustomBicycle extends Bicycle {
     @Override
     public void setGear(int gear) {
         this.gear = gear;
-        System.out.println(this.gear);
+        System.out.println("Gear is " + this.gear + "-th");
     }
 
     @Override

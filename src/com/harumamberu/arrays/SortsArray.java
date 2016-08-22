@@ -133,7 +133,7 @@ public class SortsArray {
         return arrOut;
     }
 ////////////////////////////////////////////////////////
-public static int[] selectionSortMax2MinArr(int[] arrIn){
+public int[] selectionSortMax2Min(int[] arrIn){
     int[] arrOut = arrIn;
     int maxI, maxJ, sort, jump;
     boolean flag;

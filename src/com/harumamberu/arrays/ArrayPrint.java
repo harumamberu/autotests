@@ -88,7 +88,7 @@ public class ArrayPrint {
     public void arrayPrintOut(String[] arrOut){
         System.out.println("Sorted array:");
         for (int j = 0; j < arrOut.length; j++) {
-            System.out.printf("%4d ", arrOut[j]);
+            System.out.printf("%5d ", Integer.parseInt(arrOut[j]));
         }
         System.out.println();
     }

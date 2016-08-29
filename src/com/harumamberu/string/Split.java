@@ -1,5 +1,8 @@
 package com.harumamberu.string;
 
+import com.harumamberu.arrays.ArrayPrint;
+import com.harumamberu.arrays.SortsArray;
+
 import java.util.Scanner;
 
 /**
@@ -7,9 +10,16 @@ import java.util.Scanner;
  */
 public class Split {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        String[] splitInput = input.split(" ");
-        System.out.println(splitInput.length);
+        String[] splitInput = new String(new Scanner(System.in).nextLine()).split(";");
+        System.out.println("Enter 1 or 2 to sort from Min to Max or from Max to Min");
+        switch (new Scanner(System.in).nextLine()){
+            case "1":
+                new SortsArray().selectionSortMin2Max(splitInput);
+                break;
+            case "2":
+                new SortsArray().selectionSortMax2Min(splitInput);
+                break;
+        }
+        new ArrayPrint().arrayPrintOut(splitInput);
     }
 }

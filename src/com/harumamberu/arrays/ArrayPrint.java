@@ -75,7 +75,7 @@ public class ArrayPrint {
         }
     }
 
-    public static void arrayPrintOut(int[][] arrOut){
+    public void arrayPrintOut(int[][] arrOut){
         System.out.println("Sorted array:");
         for (int j = 0; j < arrOut.length; j++) {
             for (int i = 0; i < arrOut[j].length; i++) {
@@ -83,6 +83,14 @@ public class ArrayPrint {
             }
             System.out.println();
         }
+    }
+
+    public void arrayPrintOut(String[] arrOut){
+        System.out.println("Sorted array:");
+        for (int j = 0; j < arrOut.length; j++) {
+            System.out.printf("%4d ", arrOut[j]);
+        }
+        System.out.println();
     }
 
 

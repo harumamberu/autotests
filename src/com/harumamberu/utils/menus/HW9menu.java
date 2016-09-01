@@ -23,6 +23,7 @@ public class HW9menu {
                     case D: new Enigma().enigmaMenu();
                         break;
                     case S: stop = true;
+                        break;
                         default:
                             System.out.println("Wrong input. Try again.");
                 }

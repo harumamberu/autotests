@@ -27,4 +27,11 @@ public class Enigma {
         System.out.println(builder.toString());
         return builder.toString();
     }
+    public void enigmaMenu(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter word to code:");
+        Enigma.code(scanner.nextLine().toUpperCase());
+        System.out.println("Enter word to decode:");
+        Enigma.decode(scanner.nextLine().toUpperCase());
+    }
 }

@@ -12,10 +12,11 @@ public class Builder9b {
             for( int chars = 0; chars < dataArray[i].length(); chars++){
                 for( int j = 0; j < alphabet.length(); j++) {
                     if (dataArray[i].charAt(chars) == alphabet.charAt(j)) {
-                        out.append(dataArray[i]+" ");
+                        out.append(dataArray[i].charAt(chars));
                     }
                 }
             }
+            out.append(new StringBuilder(" "));
         }
         System.out.println(out);
     }

@@ -1,4 +1,4 @@
-package com.harumamberu.menus;
+package com.harumamberu.utils.menus;
 
 import com.harumamberu.utils.calculators.CircleArea;
 import com.harumamberu.utils.calculators.EvenOddNumbers;

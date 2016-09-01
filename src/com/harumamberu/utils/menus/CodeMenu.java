@@ -1,4 +1,4 @@
-package com.harumamberu.menus;
+package com.harumamberu.utils.menus;
 
 import com.harumamberu.string.code.Enigma;
 

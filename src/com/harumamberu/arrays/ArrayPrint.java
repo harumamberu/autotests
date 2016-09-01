@@ -1,6 +1,6 @@
 package com.harumamberu.arrays;
 
-import com.harumamberu.menus.ArrayPrintMenu;
+import com.harumamberu.utils.menus.ArrayPrintMenu;
 
 import java.util.Scanner;
 

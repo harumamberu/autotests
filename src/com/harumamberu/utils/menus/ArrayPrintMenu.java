@@ -1,12 +1,10 @@
-package com.harumamberu.menus;
+package com.harumamberu.utils.menus;
 
 import com.harumamberu.arrays.ArrayPrint;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 import static com.harumamberu.arrays.SortsArray.*;
-import static com.harumamberu.arrays.ArrayPrint.*;
 
 public class ArrayPrintMenu {
     public static void menu(int[][] arrRandom){

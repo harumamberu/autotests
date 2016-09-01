@@ -1,6 +1,6 @@
 package com.harumamberu.utils.runners;
 
-import com.harumamberu.menus.LoopsArrayMenu;
+import com.harumamberu.utils.menus.LoopsArrayMenu;
 
 public class Hometask5loopsArrayRunners {
     public static void main(String[] args) {

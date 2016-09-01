@@ -1,10 +1,9 @@
-package com.harumamberu.menus;
+package com.harumamberu.utils.menus;
 
 import com.harumamberu.utils.calculators.*;
 import com.harumamberu.utils.castings.*;
 import com.harumamberu.utils.loop.CompareAB;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CalculatorsMenu {

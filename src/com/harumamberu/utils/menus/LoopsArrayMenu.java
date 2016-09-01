@@ -1,4 +1,4 @@
-package com.harumamberu.menus;
+package com.harumamberu.utils.menus;
 
 import com.harumamberu.arrays.loops.*;
 
@@ -10,8 +10,7 @@ public class LoopsArrayMenu {
         int stop = 0;
         do {
             try {
-                System.out.println("\n");
-                System.out.println("Enter the symbol to choose equal array:\n"
+                System.out.println("\nEnter the symbol to choose equal array:\n"
                         + Arrays.toString(Tasks.values()) + "\nEnter 'S' to stop.");
 
                 Tasks enterTask = Tasks.valueOf(new Scanner(System.in)

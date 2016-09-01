@@ -6,8 +6,8 @@ import java.util.Scanner;
  * Created by Мишка on 18.07.16.
  */
 public class CompareAB {
-    public void aB(){
-        Scanner scanner = new Scanner(System.in);
+    public void compareAB(){
+        Scanner scanner =  new Scanner(System.in);
         System.out.println("Enter a");
         int a = scanner.nextInt();
         System.out.println("Enter b");

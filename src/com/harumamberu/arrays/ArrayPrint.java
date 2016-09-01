@@ -1,12 +1,13 @@
 package com.harumamberu.arrays;
 
+import com.harumamberu.menus.ArrayPrintMenu;
+
 import java.util.Scanner;
 
-import static com.harumamberu.arrays.SortsArray.*;
 
 
 public class ArrayPrint {
-    public void initial(){
+    public void initialArr(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the array width");
         int w = sc.nextInt();//array length
@@ -18,25 +19,9 @@ public class ArrayPrint {
         int maxV = sc.nextInt();//upper bound value
         int[][] arrRandom = arrRandomValue(w, l, minV, maxV);
         arrayPrintIn(arrRandom);
-        menu(arrRandom);
+        ArrayPrintMenu.menu(arrRandom);
     }
 
-    public void menu(int[][] arrRandom){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("\nEnter number to choose act:\n1 sort from min to max\n2 sort from max to min\n3 find max value\n4 selection sort from min to max");
-        String i = sc.next();
-        switch(i){
-            case "1": arrayPrintOut(sortMinToMax(arrRandom));
-                break;
-            case "2": arrayPrintOut(sortMaxToMin(arrRandom));
-                break;
-            case "3": System.out.println(maxValue(arrRandom));
-                break;
-            case "4": arrayPrintOut(selectionSortMax2Min(arrRandom));
-                break;
-            default: System.out.println("Wrong input.");
-        }
-    }
     public int[] arrRandomValue(int l, int minV, int maxV){
         int[] arrRandomV = new int[l];
         int[] arrIn = arrRandomV;
@@ -57,6 +42,8 @@ public class ArrayPrint {
         return arrIn;
     }
 
+
+
     public void arrayPrintIn(int[] arrIn){
         System.out.println("Incoming array:");
         for (int j = 0; j < arrIn.length;j++) {
@@ -74,6 +61,8 @@ public class ArrayPrint {
             System.out.println();
         }
     }
+
+
 
     public void arrayPrintOut(int[][] arrOut){
         System.out.println("Sorted array:");

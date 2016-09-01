@@ -45,7 +45,7 @@ public class LoopsArrayMenu {
                         break;
                 }
             }catch(IllegalArgumentException e) {
-                System.out.println("You have made incorrect choice. Please enter one if the nextvalues" + Arrays.toString(Tasks.values()));
+                System.out.println("You have made incorrect choice. Please enter one if the next values" + Arrays.toString(Tasks.values()));
             }
         }while(stop==0);
     }

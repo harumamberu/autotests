@@ -5,13 +5,11 @@ import com.harumamberu.arrays.SortsArray;
 
 import java.util.Scanner;
 
-/**
- * Created by Мишка on 04.08.16.
- */
+
 public class Builder9a {
     public void splitAndSort(){
         System.out.println("Enter data array separated by ';'");
-        String[] splitInput = new String(new Scanner(System.in).nextLine()).split(";");
+        String[] splitInput = new Scanner(System.in).nextLine().split(";");
         System.out.println("Enter 1 or 2 to sort from Min to Max or from Max to Min");
         switch (new Scanner(System.in).nextLine()){
             case "1":

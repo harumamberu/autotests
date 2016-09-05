@@ -6,7 +6,7 @@ import com.harumamberu.utils.loop.CompareAB;
 
 import java.util.Scanner;
 
-public class CalculatorsMenu {
+public class Hometask4CalculatorsMenu {
     public static void calculatorsMenu() {
         Scanner scanner = new Scanner(System.in);
         int k = 0;

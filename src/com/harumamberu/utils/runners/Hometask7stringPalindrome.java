@@ -1,9 +1,9 @@
 package com.harumamberu.utils.runners;
 
-import com.harumamberu.utils.menus.PalindromeMenu;
+import com.harumamberu.utils.menus.Hometask7PalindromeMenu;
 
 public class Hometask7stringPalindrome {
     public static void main(String[] args) {
-        new PalindromeMenu().palindromeMenu();
+        new Hometask7PalindromeMenu().palindromeMenu();
     }
 }

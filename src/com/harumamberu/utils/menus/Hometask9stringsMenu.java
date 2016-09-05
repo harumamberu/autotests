@@ -6,7 +6,7 @@ import com.harumamberu.string.code.Enigma;
 
 import java.util.Scanner;
 
-public class Hometask9menu {
+public class Hometask9stringsMenu {
     boolean stop = false;
     public void hw9MENU(){
         do{

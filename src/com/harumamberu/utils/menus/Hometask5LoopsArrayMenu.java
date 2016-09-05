@@ -5,7 +5,7 @@ import com.harumamberu.arrays.loops.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LoopsArrayMenu {
+public class Hometask5LoopsArrayMenu {
     public void loopArrayMenu() {
         int stop = 0;
         do {

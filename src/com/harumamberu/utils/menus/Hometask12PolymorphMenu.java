@@ -6,7 +6,7 @@ import com.harumamberu.polymorphism.RandomArrayParametrizedCreator;
 
 import java.util.Scanner;
 
-public class PolymorphMenu {
+public class Hometask12PolymorphMenu {
     boolean flag = true;
     public void menu() {
         do{

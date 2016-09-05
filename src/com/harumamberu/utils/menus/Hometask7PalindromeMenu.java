@@ -5,7 +5,7 @@ import com.harumamberu.string.Palindrome;
 import java.util.Scanner;
 
 
-public class PalindromeMenu {
+public class Hometask7PalindromeMenu {
     public void palindromeMenu(){
         Palindrome palindromeRef = new Palindrome();
         boolean stop = false;

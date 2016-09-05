@@ -21,6 +21,7 @@ public class PalindromeMenu {
                     case C: palindromeRef.algorithm3(); break;
                     case D: palindromeRef.algorithm4(); break;
                     case E: palindromeRef.algorithm5(); break;
+                    case S: stop = true;
                     default:System.out.println("Wrong input. Try again.");
                 }
 

@@ -26,7 +26,7 @@ public class StringBuilderLection {
         long start = System.currentTimeMillis();
         StringBuilder c = new StringBuilder("start");
         String b = "finish";
-        for (long i=0; i<10L; i++){
+        for (long i=0; i<1000000L; i++){
             c = c.append(b);
         }
         long end = System.currentTimeMillis();

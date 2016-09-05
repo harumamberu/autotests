@@ -22,8 +22,8 @@ public class WhiteCollar extends Human {
         }
         if(flag==companyName.length()){
             this.companyName = companyName;
-            System.out.println("Company name "+ companyName + " is setted");
-        }else {System.out.println("Company name "+ companyName + " is invalid");}
+            System.out.println("Company name '"+ companyName + "' is setted");
+        }else {System.out.println("Company name '"+ companyName + "' is invalid");}
     }
 
     public void setlegalchars(){

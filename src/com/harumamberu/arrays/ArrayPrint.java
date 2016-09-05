@@ -22,7 +22,7 @@ public class ArrayPrint {
         ArrayPrintMenu.menu(arrRandom);
     }
 
-    public int[] arrRandomValue(int l, int minV, int maxV){
+    public static int[] arrRandomValue(int l, int minV, int maxV){
         int[] arrRandomV = new int[l];
         int[] arrIn = arrRandomV;
             for (int i = 0; i < l; i++) {
@@ -31,7 +31,7 @@ public class ArrayPrint {
         return arrIn;
     }
 
-    public int[][] arrRandomValue(int l, int w, int minV, int maxV){
+    public static int[][] arrRandomValue(int l, int w, int minV, int maxV){
         int[][] arrRandomV = new int[w][l];
         int[][] arrIn = arrRandomV;
         for(int j = 0; j < w; j++) {

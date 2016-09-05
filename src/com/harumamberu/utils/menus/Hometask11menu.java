@@ -5,9 +5,8 @@ import com.harumamberu.polymorphism.WhiteCollar;
 
 import java.util.Scanner;
 
-public class Hometask11menu {
-    public void hometask11menu(){
-        boolean stop = false;
+public class Hometask11menu extends Menu{
+    public void menu(){
         WhiteCollar ori = new WhiteCollar("Oriana", 25, "TicketsUA");
         ori.setlegalchars();
         do{

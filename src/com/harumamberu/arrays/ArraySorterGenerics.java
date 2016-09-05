@@ -5,11 +5,6 @@ import java.util.Arrays;
 public class ArraySorterGenerics<T extends Number> {
     T[] t;
 
-    public static void main(String[] args) {
-        /*Integer[] arr = new Integer[];
-        new ArraySorterGenerics<Integer>();*/
-    }
-
     public ArraySorterGenerics(T[] t){
         this.t = t;
     }
@@ -23,4 +18,5 @@ public class ArraySorterGenerics<T extends Number> {
         return t;
     }
 
+    public T[] getT(){return this.t;}
 }
